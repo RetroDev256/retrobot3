@@ -6,6 +6,14 @@ edition = "2021"
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
 [dependencies]
+rand = '*'
+log4rs = '*'
+num_cpus = '*'
+
+[dependencies.tokio]
+version = "1.17"
+default-features = false
+features = ["macros", "rt-multi-thread", "time"]
 
 [dependencies.serenity]
 git = "https://github.com/serenity-rs/serenity"
